@@ -1,4 +1,3 @@
-WebGLAsteroids
-==============
+# WebGL Asteroids!
 
-A WebGL game written using THREE.js for game components and AngularJS for menus.
+This is an example of how THREE.js and Angular.js can be merged together to create a browser based game.

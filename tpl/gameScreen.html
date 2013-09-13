@@ -1,0 +1,19 @@
+<div id="gameScreen">
+    <div id="menuLayer">
+        <div id="score">{{gameScore}}</div>
+
+
+        <div id="pauseScreen" ng-if="pausedState">
+            <div id="pause">
+                PAUSED
+            </div>
+            <a href="#/" id="quit">QUIT</a>
+        </div>
+    </div>
+
+    <div id="gameWrapper" x-asteroid-game score="gameScore" is-paused="pausedState">
+        <!-- Game will get inserted here -->
+    </div>
+
+</div>
+

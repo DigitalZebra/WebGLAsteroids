@@ -1,0 +1,90 @@
+body {
+    background: #222222;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: table;
+    font-family: verdana, helvetica, sans-serif;
+    color: #0d99a5;
+}
+
+#wrapper, #startGameScreen, #gameScreen, #gameWrapper, #menuLayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1, h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: .2em;
+}
+
+h1 {
+    margin-bottom: 2em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.key {
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: .2em;
+}
+
+.footnote {
+    margin-top: 2em;
+}
+
+.text > div {
+    line-height: 2em;
+}
+
+#gameWrapper {
+    z-index: 1;
+}
+
+#menuLayer {
+    z-index: 2;
+    position: relative;
+}
+
+#score {
+    width: 100%;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 1em 0 0 1em;
+}
+
+#pauseScreen, #startGameScreen {
+    width: 100%;
+    text-align: center;
+    margin-top: 4em;
+}
+
+#pause {
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+#quit, .button {
+    padding: 2em;
+    background: #0d99a5;
+    border-radius: 1em;
+    display: inline-block;
+    margin-top: 3em;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
