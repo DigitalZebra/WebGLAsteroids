@@ -99,23 +99,23 @@ Spaceship.prototype = {
         loader.load('obj/shipA_OBJ.obj', 'obj/shipA_OBJ.mtl');
     },
     update:function (gameState, scene) {
-        if (gameState.keys.UP) {
+        if (gameState.keys.UP || gameState.keys.W) {
             this.position.setY(this.position.y += this._calcMovementStep(gameState.elapsedTime, this.SPEED_Y));
         }
-        if (gameState.keys.DOWN) {
+        if (gameState.keys.DOWN || gameState.keys.S) {
             this.position.setY(this.position.y -= this._calcMovementStep(gameState.elapsedTime, this.SPEED_Y));
         }
-        if (gameState.keys.LEFT) {
+        if (gameState.keys.LEFT || gameState.keys.A) {
             this.position.setX(this.position.x -= this._calcMovementStep(gameState.elapsedTime, this.SPEED_X));
             this.rotation.setZ(this.ROTATION_AMOUNT);
         }
 
-        if (gameState.keys.RIGHT) {
+        if (gameState.keys.RIGHT || gameState.keys.D) {
             this.position.setX(this.position.x += this._calcMovementStep(gameState.elapsedTime, this.SPEED_X));
             this.rotation.setZ(-this.ROTATION_AMOUNT);
         }
 
-        if (!gameState.keys.RIGHT && !gameState.keys.LEFT) {
+        if (!(gameState.keys.RIGHT || gameState.keys.D) && !(gameState.keys.LEFT || gameState.keys.A)) {
             this.rotation.setZ(0);
         }
 
